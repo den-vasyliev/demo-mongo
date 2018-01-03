@@ -7,7 +7,8 @@ console.log("Models SetUp");
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', {
-        title: 'Express'
+        title: 'Demo v.1.0',
+        bgcolor: 'blue'
     });
 });
 

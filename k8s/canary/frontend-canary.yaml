@@ -8,14 +8,14 @@ spec:
     metadata:
       labels:
         app: node-mongo-app
-        tier: backend
+        tier: frontend
         track: stable
         env: canary
         role: frontend
     spec:
       containers:
         - name: "node-mongo"
-          image: "gcr.io/cloud-solutions-images/node-mongo:1.0.0"
+          image: "gcr.io/extreme-torch-190915/node-mongo:master.1"
           ports:
             - name: http
               containerPort: 8080
