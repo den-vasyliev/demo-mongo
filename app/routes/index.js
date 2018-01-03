@@ -8,7 +8,7 @@ console.log("Models SetUp");
 router.get('/', function(req, res, next) {
     res.render('index', {
         title: 'Demo',
-        bgcolor: 'blue',
+        bgcolor: 'red',
         version: ': 1.0.0'
     });
 });
