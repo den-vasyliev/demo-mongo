@@ -8,7 +8,7 @@ spec:
     metadata:
       labels:
         app: node-mongo-app
-        tier: backend
+        tier: frontend
         track: stable
         env: dev
         role: frontend
