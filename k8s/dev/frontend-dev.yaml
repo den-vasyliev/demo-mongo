@@ -25,4 +25,4 @@ spec:
             - name: "DB_PORT"
               value: "27017"
             - name: "DB_HOST"
-              value: "dev-db"
+              value: "app-db"
