@@ -8,14 +8,14 @@ spec:
     metadata:
       labels:
         app: node-mongo-app
-        tier: backend
+        tier: frontend
         track: stable
         env: production
         role: frontend
     spec:
       containers:
         - name: "node-mongo"
-          image: "gcr.io/cloud-solutions-images/node-mongo:master.3"
+          image: "gcr.io/extreme-torch-190915/node-mongo:master.1"
           ports:
             - name: http
               containerPort: 8080
@@ -25,4 +25,4 @@ spec:
             - name: "DB_PORT"
               value: "27017"
             - name: "DB_HOST"
-              value: "mongo"
+              value: "app-db"
