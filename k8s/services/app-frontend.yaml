@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: app-frontend
+spec:
+  selector:
+    app: node-mongo-app
+    tier: frontend
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: http
+  type: LoadBalancer
