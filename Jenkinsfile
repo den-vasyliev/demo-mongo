@@ -11,7 +11,7 @@ node {
   sh("docker build -t ${imageTag} .")
 
   stage 'Run Tests'
-  sh("docker run ${imageTag} echo test")
+  sh("docker run ${imageTag} npm version")
 
   stage 'Push image to registry'
   sh("gcloud docker -- push ${imageTag}")

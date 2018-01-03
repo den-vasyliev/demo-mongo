@@ -11,6 +11,9 @@ WORKDIR /server
 # Bundle app source
 COPY app/package.json /server/package.json
 
+#version update
+RUN npm version patch
+
 # Install npm and bower dependencies
 RUN npm install
 
